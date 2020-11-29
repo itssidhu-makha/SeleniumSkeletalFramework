@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+
+  hub:
+    image: selenium/hub:latest
+    ports:
+      - "4444:4444"
+
+    environment:
+      GRID_MAX_SESSION: 16
+      GRID_BROWSER_TIMEOUT: 3000
+      GRID_TIMEOUT: 3000
+
+  chrome:
+    image: selenium/node-chrome-debug:latest
+    container_name: web-automation_chrome
+    depends_on:
+      - hub
+    environment:
+      HUB_PORT_4444_TCP_ADDR: hub
+      HUB_PORT_4444_TCP_PORT: 4444
+      NODE_MAX_SESSION: 1
+      NODE_MAX_INSTANCES: 2
+    volumes:
+      - /dev/shm:/dev/shm
+    ports:
+      - "9001:5900"
+    links:
+      - hub
+
