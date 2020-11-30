@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2020-11-29T22:08:04 GMT" name="MySuite" finished-at="2020-11-29T22:08:10 GMT" duration-ms="5402">
     <groups>
     </groups>
@@ -12,10 +13,22 @@
           </reporter-output>
         </test-method> <!-- setUpWebDriver -->
         <test-method is-config="true" signature="setReporter(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@578486a3]" started-at="2020-11-29T22:08:07 GMT" name="setReporter" finished-at="2020-11-29T22:08:07 GMT" duration-ms="263" status="PASS">
+=======
+  <suite started-at="2020-11-30T22:24:05 GMT" name="MySuite" finished-at="2020-11-30T22:26:48 GMT" duration-ms="163780">
+    <groups>
+    </groups>
+    <test started-at="2020-11-30T22:24:05 GMT" name="TestOne" finished-at="2020-11-30T22:26:13 GMT" duration-ms="128675">
+      <class name="com.org.controller.BaseTest">
+        <test-method is-config="true" signature="setUpWebDriver()[pri:0, instance:com.org.controller.BaseTest@2286778]" started-at="2020-11-30T22:24:05 GMT" name="setUpWebDriver" finished-at="2020-11-30T22:25:49 GMT" duration-ms="104176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpWebDriver -->
+        <test-method is-config="true" signature="setReporter(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@2286778]" started-at="2020-11-30T22:25:49 GMT" name="setReporter" finished-at="2020-11-30T22:25:54 GMT" duration-ms="4905" status="PASS">
+>>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
           <params>
             <param index="0">
               <value>
-                <![CDATA[TestTwo]]>
+                <![CDATA[TestOne]]>
               </value>
             </param>
             <param index="1">
@@ -27,11 +40,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setReporter -->
+<<<<<<< HEAD
         <test-method signature="initiateCases(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@578486a3]" started-at="2020-11-29T22:08:07 GMT" name="initiateCases" description="Dynamic test Builder" finished-at="2020-11-29T22:08:07 GMT" duration-ms="3" status="FAIL">
+=======
+        <test-method signature="initiateCases(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@2286778]" started-at="2020-11-30T22:25:54 GMT" name="initiateCases" description="Dynamic test Builder" finished-at="2020-11-30T22:26:11 GMT" duration-ms="17394" status="PASS">
+>>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
           <params>
             <param index="0">
               <value>
-                <![CDATA[TestTwo]]>
+                <![CDATA[TestOne]]>
               </value>
             </param>
             <param index="1">
@@ -40,6 +57,7 @@
               </value>
             </param>
           </params>
+<<<<<<< HEAD
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -100,10 +118,17 @@ at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
+=======
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateCases -->
+        <test-method is-config="true" signature="releaseThreadsAndShutDown()[pri:0, instance:com.org.controller.BaseTest@2286778]" started-at="2020-11-30T22:26:11 GMT" name="releaseThreadsAndShutDown" finished-at="2020-11-30T22:26:13 GMT" duration-ms="2098" status="PASS">
+>>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseThreadsAndShutDown -->
       </class> <!-- com.org.controller.BaseTest -->
+<<<<<<< HEAD
     </test> <!-- TestTwo -->
     <test started-at="2020-11-29T22:08:04 GMT" name="TestOne" finished-at="2020-11-29T22:08:07 GMT" duration-ms="3215">
       <class name="com.org.controller.BaseTest">
@@ -112,10 +137,20 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           </reporter-output>
         </test-method> <!-- setUpWebDriver -->
         <test-method is-config="true" signature="setReporter(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@63753b6d]" started-at="2020-11-29T22:08:07 GMT" name="setReporter" finished-at="2020-11-29T22:08:07 GMT" duration-ms="289" status="PASS">
+=======
+    </test> <!-- TestOne -->
+    <test started-at="2020-11-30T22:26:14 GMT" name="TestTwo" finished-at="2020-11-30T22:26:34 GMT" duration-ms="20669">
+      <class name="com.org.controller.BaseTest">
+        <test-method is-config="true" signature="setUpWebDriver()[pri:0, instance:com.org.controller.BaseTest@610694f1]" started-at="2020-11-30T22:26:14 GMT" name="setUpWebDriver" finished-at="2020-11-30T22:26:18 GMT" duration-ms="4698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpWebDriver -->
+        <test-method is-config="true" signature="setReporter(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@610694f1]" started-at="2020-11-30T22:26:18 GMT" name="setReporter" finished-at="2020-11-30T22:26:18 GMT" duration-ms="11" status="PASS">
+>>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
           <params>
             <param index="0">
               <value>
-                <![CDATA[TestOne]]>
+                <![CDATA[TestTwo]]>
               </value>
             </param>
             <param index="1">
@@ -127,11 +162,15 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setReporter -->
+<<<<<<< HEAD
         <test-method signature="initiateCases(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@63753b6d]" started-at="2020-11-29T22:08:07 GMT" name="initiateCases" description="Dynamic test Builder" finished-at="2020-11-29T22:08:07 GMT" duration-ms="0" status="FAIL">
+=======
+        <test-method signature="initiateCases(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@610694f1]" started-at="2020-11-30T22:26:18 GMT" name="initiateCases" description="Dynamic test Builder" finished-at="2020-11-30T22:26:34 GMT" duration-ms="15200" status="PASS">
+>>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
           <params>
             <param index="0">
               <value>
-                <![CDATA[TestOne]]>
+                <![CDATA[TestTwo]]>
               </value>
             </param>
             <param index="1">
@@ -140,6 +179,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
               </value>
             </param>
           </params>
+<<<<<<< HEAD
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -200,10 +240,17 @@ at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
+=======
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateCases -->
+        <test-method is-config="true" signature="releaseThreadsAndShutDown()[pri:0, instance:com.org.controller.BaseTest@610694f1]" started-at="2020-11-30T22:26:34 GMT" name="releaseThreadsAndShutDown" finished-at="2020-11-30T22:26:34 GMT" duration-ms="741" status="PASS">
+>>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseThreadsAndShutDown -->
       </class> <!-- com.org.controller.BaseTest -->
+<<<<<<< HEAD
     </test> <!-- TestOne -->
     <test started-at="2020-11-29T22:08:07 GMT" name="TestThree" finished-at="2020-11-29T22:08:10 GMT" duration-ms="2095">
       <class name="com.org.controller.BaseTest">
@@ -212,6 +259,16 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           </reporter-output>
         </test-method> <!-- setUpWebDriver -->
         <test-method is-config="true" signature="setReporter(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@50b494a6]" started-at="2020-11-29T22:08:10 GMT" name="setReporter" finished-at="2020-11-29T22:08:10 GMT" duration-ms="10" status="PASS">
+=======
+    </test> <!-- TestTwo -->
+    <test started-at="2020-11-30T22:26:34 GMT" name="TestThree" finished-at="2020-11-30T22:26:48 GMT" duration-ms="13978">
+      <class name="com.org.controller.BaseTest">
+        <test-method is-config="true" signature="setUpWebDriver()[pri:0, instance:com.org.controller.BaseTest@2758fe70]" started-at="2020-11-30T22:26:34 GMT" name="setUpWebDriver" finished-at="2020-11-30T22:26:38 GMT" duration-ms="3275" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpWebDriver -->
+        <test-method is-config="true" signature="setReporter(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@2758fe70]" started-at="2020-11-30T22:26:38 GMT" name="setReporter" finished-at="2020-11-30T22:26:38 GMT" duration-ms="0" status="PASS">
+>>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
           <params>
             <param index="0">
               <value>
@@ -227,7 +284,11 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setReporter -->
+<<<<<<< HEAD
         <test-method signature="initiateCases(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@50b494a6]" started-at="2020-11-29T22:08:10 GMT" name="initiateCases" description="Dynamic test Builder" finished-at="2020-11-29T22:08:10 GMT" duration-ms="0" status="FAIL">
+=======
+        <test-method signature="initiateCases(java.lang.String, java.lang.String)[pri:0, instance:com.org.controller.BaseTest@2758fe70]" started-at="2020-11-30T22:26:38 GMT" name="initiateCases" description="Dynamic test Builder" finished-at="2020-11-30T22:26:47 GMT" duration-ms="9355" status="PASS">
+>>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
           <params>
             <param index="0">
               <value>
@@ -240,6 +301,7 @@ at java.base/java.lang.Thread.run(Thread.java:832)
               </value>
             </param>
           </params>
+<<<<<<< HEAD
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -300,6 +362,12 @@ at java.base/java.lang.Thread.run(Thread.java:832)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
+=======
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiateCases -->
+        <test-method is-config="true" signature="releaseThreadsAndShutDown()[pri:0, instance:com.org.controller.BaseTest@2758fe70]" started-at="2020-11-30T22:26:47 GMT" name="releaseThreadsAndShutDown" finished-at="2020-11-30T22:26:48 GMT" duration-ms="1347" status="PASS">
+>>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
           <reporter-output>
           </reporter-output>
         </test-method> <!-- releaseThreadsAndShutDown -->

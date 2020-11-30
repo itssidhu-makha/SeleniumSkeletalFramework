@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [MySuite]">
-  <test thread-count="2" parallel="tests" name="TestTwo(failed)">
-    <parameter name="SheetRunning" value="Test"/>
-    <parameter name="TestRunning" value="TestTwo"/>
-    <classes>
-      <class name="com.org.controller.BaseTest">
-        <methods>
-          <include name="initiateCases" invocation-numbers="0"/>
-          <include name="setReporter"/>
-          <include name="setUpWebDriver"/>
-          <include name="releaseThreadsAndShutDown"/>
-        </methods>
-      </class> <!-- com.org.controller.BaseTest -->
-    </classes>
-  </test> <!-- TestTwo(failed) -->
-  <test thread-count="2" parallel="tests" name="TestOne(failed)">
+<suite thread-count="1" parallel="tests" name="Failed suite [MySuite]">
+  <test thread-count="1" parallel="tests" name="TestOne(failed)">
     <parameter name="SheetRunning" value="Test"/>
     <parameter name="TestRunning" value="TestOne"/>
     <classes>
@@ -29,18 +15,4 @@
       </class> <!-- com.org.controller.BaseTest -->
     </classes>
   </test> <!-- TestOne(failed) -->
-  <test thread-count="2" parallel="tests" name="TestThree(failed)">
-    <parameter name="SheetRunning" value="Test"/>
-    <parameter name="TestRunning" value="TestThree"/>
-    <classes>
-      <class name="com.org.controller.BaseTest">
-        <methods>
-          <include name="initiateCases" invocation-numbers="0"/>
-          <include name="setReporter"/>
-          <include name="setUpWebDriver"/>
-          <include name="releaseThreadsAndShutDown"/>
-        </methods>
-      </class> <!-- com.org.controller.BaseTest -->
-    </classes>
-  </test> <!-- TestThree(failed) -->
 </suite> <!-- Failed suite [MySuite] -->
