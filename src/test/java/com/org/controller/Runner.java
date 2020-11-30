@@ -23,7 +23,7 @@ public class Runner {
     public int totalThreads;
 
     {
-        totalThreads=2;
+        totalThreads=1;
         gridExecution=true;
         suiteName="MySuite";
         columnHeaderForTest="TestName";//This will be your column header in excel sheet

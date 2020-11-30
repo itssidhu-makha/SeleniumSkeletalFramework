@@ -4,7 +4,6 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.relevantcodes.extentreports.NetworkMode;
-import org.testng.Assert;
 import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
@@ -15,6 +14,8 @@ public  class BaseTest {
     private BaseTest(){
 
     }
+    public static BaseTest instanceBase=getInstance();
+
     public static BaseTest getInstance(){
         if(myInstance==null){
             myInstance= new BaseTest();
@@ -27,6 +28,7 @@ public  class BaseTest {
     ExtentTest test=null;
 
     public  ExtentTest getTest(){
+
         return test;
     }
     @BeforeClass
@@ -34,13 +36,14 @@ public  class BaseTest {
     public void setReporter(String testRunnning,String sheetRunning) throws MalformedURLException {
         repo = new ExtentReports("C:\\Selenium\\reports\\"+testRunnning+"\\"+testRunnning+".html",true, NetworkMode.ONLINE);
         test =repo.startTest(testRunnning);
-        System.out.println("Inside Before class");
+
     }
 
     @BeforeTest
     public void setUpWebDriver() throws MalformedURLException {
         try {
             instance.setWebDriver("chrome");
+
         }catch(Exception e){
             e.printStackTrace();
         }
@@ -51,6 +54,7 @@ public  class BaseTest {
     public void initiateCases(String testRunnning,String sheetRunning){
 
         instance.getWebDriver().get("https://www.google.com");
+
         if("Google".equalsIgnoreCase(instance.getWebDriver().getTitle())) {
             test.log(LogStatus.PASS, "Url was launched and title matched");
         }else{
