@@ -6,7 +6,7 @@ import com.relevantcodes.extentreports.NetworkMode;
 public class ExtentManager {
 
     public ExtentReports getReportObject(){
-        ExtentReports repo = new ExtentReports("C:\\Selenium\\reports"+"",true, NetworkMode.ONLINE);
+        ExtentReports repo = new ExtentReports("C:\\Selenium\\reports"+"",false, NetworkMode.ONLINE);
         return repo;
     }
 }

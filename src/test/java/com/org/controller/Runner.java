@@ -87,8 +87,6 @@ public class Runner {
                 .collect(Collectors.toList());
 
         Map<String,String> testParams = null;
-       //System.out.println(System.getProperty("java.class.path"));
-        //System.out.println(com.google.common.collect.ImmutableSet.class.getResource("ImmutableSet.class"));
         //dynamically create your tests, rather than copy pasting into xml file
         //The below code will create exact number of tests which are specified as Yes in excel sheet
         for(int i=0;i<totalTests;i++){
@@ -107,7 +105,7 @@ public class Runner {
             test.setName(testNamesFromSheet.get(i));
             test.setParameters(testParams);
             test.setXmlClasses(classNames);
-           // suite.addTest(test);
+
 
         }
 
