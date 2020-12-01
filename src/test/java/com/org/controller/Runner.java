@@ -24,7 +24,7 @@ public class Runner {
 
     {
         totalThreads=1;
-        gridExecution=true;
+        gridExecution=false;
         suiteName="MySuite";
         columnHeaderForTest="TestName";//This will be your column header in excel sheet
         paramterForTestCase="TestRunning";//Note this should be same as in BaseTest where your @Test annotation is located
