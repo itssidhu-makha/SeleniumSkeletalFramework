@@ -33,7 +33,7 @@ public  class BaseTest {
     }
     @BeforeClass
     @Parameters({"TestRunning","SheetRunning"})
-    public void setReporter(String testRunnning,String sheetRunning) throws MalformedURLException {
+    public void setReporter(@Optional("Test") String testRunnning,@Optional("Test") String sheetRunning) throws MalformedURLException {
         repo = new ExtentReports("C:\\Selenium\\reports\\"+testRunnning+"\\"+testRunnning+".html",true, NetworkMode.ONLINE);
         test =repo.startTest(testRunnning);
 
@@ -51,7 +51,7 @@ public  class BaseTest {
 
     @Test(description = "Dynamic test Builder",retryAnalyzer = RetryAnalyser.class)
     @Parameters({"TestRunning","SheetRunning"})
-    public void initiateCases(String testRunnning,String sheetRunning){
+    public void initiateCases(@Optional("Test") String testRunnning,@Optional("Base") String sheetRunning){
 
         instance.getWebDriver().get("https://www.google.com");
 
