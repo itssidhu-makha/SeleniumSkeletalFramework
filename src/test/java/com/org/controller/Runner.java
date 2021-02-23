@@ -13,22 +13,30 @@ import java.util.stream.Collectors;
 
 public class Runner {
 
+    public static boolean sauceLab;
+    public static boolean remoteExecution;
     public String suiteName;
     public String columnHeaderForTest;
     public String paramterForTestCase;
     public String paramForSheet;
     public String workbookToRun;
     public String classContainingTests;
-    public static boolean gridExecution;
     public int totalThreads;
+    public boolean dockerExecution;
+    public static boolean zalenium;
+    public  static boolean gridDockerExecution;
+    public static boolean gridLocalExecution;
 
     {
-        totalThreads=1;
-        gridExecution=false;
+        totalThreads=2;
+        remoteExecution=true;
+        gridLocalExecution=false;
+        gridDockerExecution=false;
+        zalenium=true;
         suiteName="MySuite";
         columnHeaderForTest="TestName";//This will be your column header in excel sheet
         paramterForTestCase="TestRunning";//Note this should be same as in BaseTest where your @Test annotation is located
-
+        sauceLab=false;
         paramForSheet="SheetRunning";//Note this should be same as in BaseTest where your @Test annotation is located
         workbookToRun="Test";
         classContainingTests="com.org.controller.BaseTest";

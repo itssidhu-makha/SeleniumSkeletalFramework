@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,11 +103,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-MySuite" title="com.org.controller.BaseTest" class="method navigator-link" hash-for-method="initiateCases(TestOne, Test)">initiateCases(TestOne, Test)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-MySuite" title="com.org.controller.BaseTest" class="method navigator-link" hash-for-method="initiateCases(TestTwo, Test)">initiateCases(TestTwo, Test)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,43 +133,7 @@
                   <a name="initiateCases(TestOne, Test)">
                   </a> <!-- initiateCases(TestOne, Test) -->
                   <span class="method-name">initiateCases</span>
-<<<<<<< HEAD
-                  <span class="parameters">(TestTwo, Test)</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.org.controller.BaseTest.initiateCases(BaseTest.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-=======
                   <span class="parameters">(TestOne, Test)</span>
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
-                  <em>
-(Dynamic test Builder)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="initiateCases(TestTwo, Test)">
-                  </a> <!-- initiateCases(TestTwo, Test) -->
-                  <span class="method-name">initiateCases</span>
-<<<<<<< HEAD
-                  <span class="parameters">(TestOne, Test)</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.org.controller.BaseTest.initiateCases(BaseTest.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-=======
-                  <span class="parameters">(TestTwo, Test)</span>
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
                   <em>
 (Dynamic test Builder)                  </em>
                 </div> <!-- method-content -->
@@ -185,18 +144,6 @@
                   </a> <!-- initiateCases(TestThree, Test) -->
                   <span class="method-name">initiateCases</span>
                   <span class="parameters">(TestThree, Test)</span>
-<<<<<<< HEAD
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.org.controller.BaseTest.initiateCases(BaseTest.java:53)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 18 stack frames
-</div> <!-- stack-trace -->
-=======
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
                   <em>
 (Dynamic test Builder)                  </em>
                 </div> <!-- method-content -->
@@ -211,22 +158,22 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;MySuite&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;TestOne&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;MySuite&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestOne&quot;&gt;
     &lt;parameter name=&quot;SheetRunning&quot; value=&quot;Test&quot;/&gt;
     &lt;parameter name=&quot;TestRunning&quot; value=&quot;TestOne&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.org.controller.BaseTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestOne --&gt;
-  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;TestTwo&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestTwo&quot;&gt;
     &lt;parameter name=&quot;SheetRunning&quot; value=&quot;Test&quot;/&gt;
     &lt;parameter name=&quot;TestRunning&quot; value=&quot;TestTwo&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.org.controller.BaseTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestTwo --&gt;
-  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;TestThree&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestThree&quot;&gt;
     &lt;parameter name=&quot;SheetRunning&quot; value=&quot;Test&quot;/&gt;
     &lt;parameter name=&quot;TestRunning&quot; value=&quot;TestThree&quot;/&gt;
     &lt;classes&gt;
@@ -276,36 +223,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'initiateCases')
 data.setCell(0, 2, 'com.org.controller.BaseTest')
-<<<<<<< HEAD
-data.setCell(0, 3, 3);
+data.setCell(0, 3, 61162);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'initiateCases')
 data.setCell(1, 2, 'com.org.controller.BaseTest')
-data.setCell(1, 3, 0);
-=======
-data.setCell(0, 3, 17394);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'initiateCases')
-data.setCell(1, 2, 'com.org.controller.BaseTest')
-data.setCell(1, 3, 15200);
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'initiateCases')
-data.setCell(2, 2, 'com.org.controller.BaseTest')
-data.setCell(2, 3, 9355);
+data.setCell(1, 3, 19350);
 window.suiteTableData['MySuite']= { tableData: data, tableDiv: 'times-div-MySuite'}
 return data;
 }
               </script>
-<<<<<<< HEAD
-              <span class="suite-total-time">Total running time: 3 seconds</span>
-=======
-              <span class="suite-total-time">Total running time: 2 minutes</span>
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-MySuite">
               </div> <!-- times-div-MySuite -->
             </div> <!-- times-div -->
@@ -336,99 +267,49 @@ return data;
                 <span class="method-name">setUpWebDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
-<<<<<<< HEAD
               <div class="configuration-test before">
                 <span class="method-name">setUpWebDriver</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setReporter(TestOne, Test)</span>
-                <span class="method-start">2917 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-class before">
-                <span class="method-name">setReporter(TestTwo, Test)</span>
-                <span class="method-start">2917 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">initiateCases(TestTwo, Test)</span>
-                <span class="method-start">3191 ms</span>
-=======
-              <div class="configuration-class before">
-                <span class="method-name">setReporter(TestOne, Test)</span>
-                <span class="method-start">104216 ms</span>
+                <span class="method-start">32160 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">initiateCases(TestOne, Test)</span>
-                <span class="method-start">109139 ms</span>
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
+                <span class="method-start">34023 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">releaseThreadsAndShutDown</span>
-<<<<<<< HEAD
-                <span class="method-start">3206 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">initiateCases(TestOne, Test)</span>
-                <span class="method-start">3207 ms</span>
-=======
-                <span class="method-start">126571 ms</span>
+                <span class="method-start">53422 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">setUpWebDriver</span>
-                <span class="method-start">129015 ms</span>
+                <span class="method-start">56375 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setReporter(TestTwo, Test)</span>
-                <span class="method-start">133714 ms</span>
+                <span class="method-start">71232 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">initiateCases(TestTwo, Test)</span>
-                <span class="method-start">133727 ms</span>
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
+                <span class="method-start">71287 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">releaseThreadsAndShutDown</span>
-<<<<<<< HEAD
-                <span class="method-start">3210 ms</span>
+                <span class="method-start">157590 ms</span>
               </div> <!-- configuration-test after -->
-              <div class="configuration-test before">
-                <span class="method-name">setUpWebDriver</span>
-                <span class="method-start">3303 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">setReporter(TestThree, Test)</span>
-                <span class="method-start">5386 ms</span>
-=======
-                <span class="method-start">148928 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-test before">
-                <span class="method-name">setUpWebDriver</span>
-                <span class="method-start">149796 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
-                <span class="method-name">setReporter(TestThree, Test)</span>
-                <span class="method-start">153071 ms</span>
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
+                <span class="method-start">207285 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">initiateCases(TestThree, Test)</span>
-<<<<<<< HEAD
-                <span class="method-start">5397 ms</span>
-=======
-                <span class="method-start">153071 ms</span>
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
+                <span class="method-start">207386 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">releaseThreadsAndShutDown</span>
-<<<<<<< HEAD
-                <span class="method-start">5398 ms</span>
-=======
-                <span class="method-start">162427 ms</span>
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
+                <span class="method-start">268656 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

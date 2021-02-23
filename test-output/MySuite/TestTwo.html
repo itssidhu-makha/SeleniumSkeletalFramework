@@ -55,17 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TestTwo</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<<<<<<< HEAD
-<td>Started on:</td><td>Sun Nov 29 21:55:30 GMT 2020</td>
+<td>Started on:</td><td>Tue Feb 23 12:29:24 GMT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8666 ms)</td>
-=======
-<td>Started on:</td><td>Mon Nov 30 22:26:14 GMT 2020</td>
-</tr>
-<tr><td>Total time:</td><td>20 seconds (20669 ms)</td>
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
+<tr><td>Total time:</td><td>1 seconds (1160 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -73,33 +67,89 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.org.controller.BaseTest.initiateCases()'><b>initiateCases</b><br>Test class: com.org.controller.BaseTest<br>Test method: Dynamic test Builder<br>Parameters: TestTwo, Test</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.org.controller.BrowserFactory.getWebDriver()&quot; is null
+	at com.org.controller.BaseTest.initiateCases(BaseTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1080173402", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1080173402'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.org.controller.BrowserFactory.getWebDriver()&quot; is null
+	at com.org.controller.BaseTest.initiateCases(BaseTest.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>com.org.controller.BaseTest@22a67b4</td></tr>
+<tr>
 <td title='com.org.controller.BaseTest.initiateCases()'><b>initiateCases</b><br>Test class: com.org.controller.BaseTest<br>Test method: Dynamic test Builder<br>Parameters: TestOne, Test</td>
-<td></td>
-<<<<<<< HEAD
-<td>2</td>
-<td>com.org.controller.BaseTest@63753b6d</td></tr>
-<tr>
-<td title='com.org.controller.BaseTest.initiateCases()'><b>initiateCases</b><br>Test class: com.org.controller.BaseTest<br>Test method: Dynamic test Builder<br>Parameters: TestTwo, Test</td>
-<td></td>
-<td>2</td>
-<td>com.org.controller.BaseTest@578486a3</td></tr>
-=======
-<td>17</td>
-<td>com.org.controller.BaseTest@2286778</td></tr>
-<tr>
-<td title='com.org.controller.BaseTest.initiateCases()'><b>initiateCases</b><br>Test class: com.org.controller.BaseTest<br>Test method: Dynamic test Builder<br>Parameters: TestTwo, Test</td>
-<td></td>
-<td>15</td>
-<td>com.org.controller.BaseTest@610694f1</td></tr>
->>>>>>> fd8ce76c306af294827123bb2e8ac8697e8176dc
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.org.controller.BrowserFactory.getWebDriver()&quot; is null
+	at com.org.controller.BaseTest.initiateCases(BaseTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace65473912", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace65473912'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because the return value of &quot;com.org.controller.BrowserFactory.getWebDriver()&quot; is null
+	at com.org.controller.BaseTest.initiateCases(BaseTest.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:425)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:68)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+</pre></div></td>
+<td>0</td>
+<td>com.org.controller.BaseTest@3b0143d3</td></tr>
 </table><p>
 </body>
 </html>

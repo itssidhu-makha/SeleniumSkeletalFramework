@@ -4,9 +4,13 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.relevantcodes.extentreports.NetworkMode;
+import org.openqa.selenium.Cookie;
+import org.openqa.selenium.JavascriptExecutor;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
+
 
 @Listeners(com.org.controller.ListenerClass.class)
 public  class BaseTest {
@@ -54,6 +58,8 @@ public  class BaseTest {
     public void initiateCases(@Optional("Test") String testRunnning,@Optional("Base") String sheetRunning){
 
         instance.getWebDriver().get("https://www.google.com");
+        if(Runner.zalenium)
+        instance.getWebDriver().manage().addCookie(new Cookie("zaleniumMessage","URL opened"));
 
         if("Google".equalsIgnoreCase(instance.getWebDriver().getTitle())) {
             test.log(LogStatus.PASS, "Url was launched and title matched");
@@ -64,13 +70,19 @@ public  class BaseTest {
     }
 
     @AfterTest
-    @Parameters({"TestRunning","SheetRunning"})
     public void releaseThreadsAndShutDown(){
-        instance.getWebDriver().quit();//This will also shut down chromedriver.exe from processes
+        ;//This will also shut down chromedriver.exe from processes
         //removing thread locals from permGen to avoid memory overhead
-        if(Runner.gridExecution){
+        if(Runner.remoteExecution){
+            instance.getWebDriver().quit();
             instance.remoteWebDriver.remove();
-        }else{
+        }else if(Runner.sauceLab){
+
+            instance.getWebDriver().quit();
+            instance.remoteWebDriver.remove();
+        }
+        else{
+            instance.getWebDriver().quit();
             instance.webDriver.remove();
         }
 
