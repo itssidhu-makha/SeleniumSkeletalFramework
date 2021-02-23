@@ -1,4 +1,4 @@
-# SeleniumSkeletalFramework
+# Selenium Framework with Saucelabs,Docker and Zalenium
 This framework can be extented to any application. 
 1) It comes with default docker support to run test cases in parallel using grid infrastructure within the Docker
 2) It has saucelabs support as well. Ensure to set your username and access key at global level for sauce level
