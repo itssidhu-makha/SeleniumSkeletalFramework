@@ -6,4 +6,7 @@ This framework can be extented to any application.
 To run Zalenium, ensure to open cmd as admin user and run below command
 docker run --rm -ti --name zalenium -p 4444:4444 -v /var/run/docker.sock:/var/run/docker.sock -v /tmp/videos:/home/seluser/videos --privileged dosel/zalenium start 
 
+Note:
+With Docker entire infrastructure is handled at server side and there is no installation needed on client side.Dockerization makes execution faster as well as our scripts are interacting with lightweight containers. We can het rid of costly VMs and loads of installations with Dockerization in place.
+
 
